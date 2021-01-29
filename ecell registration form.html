@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhay's Registration form</title>
+    <style>
+        .hdr h2 {
+            text-align: center;
+            font-weight: bold;
+            color: #f9fab9;
+            position: relative;
+            top: 15px;
+        }
+
+        .hdr p {
+            color: wheat;
+            margin: 12px;
+            padding: 14px;
+        }
+
+        .hdr {
+            background-color: black;
+            margin: -20px -8px;
+            padding: 0px;
+        }
+
+        .form-action {
+            border: 15px solid black;
+            width: 900px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin: 64px auto;
+            /* padding: 0px; */
+            background-color: #eabe6d;
+
+        }
+
+        .form-action h3 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+
+        .form-action p {
+            position: relative;
+            top: -8px;
+        }
+
+        .form-action div {
+            margin: 12px 13px;
+        }
+
+        input {
+            width: 800px;
+            height: 25px;
+            border-radius: 3px;
+        }
+
+        ::placeholder {
+            font-size: 10px;
+        }
+
+        input[type="datetime"]::-webkit-input-placeholder {
+            color: black;
+            font-weight: bold;
+        }
+
+        button {
+            font-weight: bold;
+            border: 3px solid black;
+            border-radius: 3px;
+            width: 800px;
+            height: 25px;
+            margin: 12px 13px;
+            display: block;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            background-image: linear-gradient(to right, #5817f0 0%, #d83c11 51%, #5817f0 100%);
+        }
+
+
+        button:hover {
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 6px 6px rgba(0, 0, 0, 0.5);
+            background-position: right center;
+
+        }
+
+        hr {
+            width: 804px;
+            position: relative;
+            top: 135px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="hdr">
+        <h2>Registration Form</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore quas adipisci ducimus fugiat repellendus
+            numquam id quasi unde debitis obcaecati modi, ullam ad ex velit porro odit veritatis veniam sint. Minus enim
+            deserunt nostrum consequuntur voluptate non ipsam natus! Praesentium dolorem quod est dolore molestiae Lorem
+            ipsum dolor sit amet, consectetur adipisicing elit. Consectetur repellendus fugiat sit sapiente deserunt
+            maxime assumenda voluptatibus. Corrupti harum impedit quod. Magni laboriosam dignissimos beatae blanditiis
+            nostru.</p>
+    </header>
+    <hr>
+    <form action="backend.php" class="form-action">
+        <h3>REGISTER NOW</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci dignissimos .</p>
+        <div>
+            <input type="text" placeholder="Enter your name">
+        </div>
+        <div>
+            <input type="datetime" placeholder="dd/mm/yy">
+        </div>
+        <div>
+            <input type="email" placeholder="Enter your email">
+        </div>
+        <div>
+            <input type="text" placeholder="Choose password">
+        </div>
+        <div>
+            <input type="text" placeholder="Confirm password">
+        </div>
+
+        <button>
+            Create My Account
+        </button>
+    </form>
+
+</body>
+
+</html>
